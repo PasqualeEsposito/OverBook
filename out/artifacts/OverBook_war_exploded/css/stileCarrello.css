@@ -1,0 +1,514 @@
+/*carrello vuoto*/
+#contenitorecarrellovuoto{
+    display: grid;
+    grid-template-rows: auto ;
+    grid-template-columns: 25% 75%;
+    grid-template-areas:
+            "imagecarrellovuoto carrellovuoto";
+    /*border-top: 5px solid #333;
+    border-bottom: 5px solid #333;*/
+    padding-top:5%;
+    padding-bottom:5%;
+    box-shadow:  0 8px 6px -6px #666666, 0 -8px 6px -6px #666666, 8px 0 6px -6px #666666, -8px 0 6px -6px #666666;
+
+}
+
+#carrellovuoto{
+    grid-area: carrellovuoto;
+    padding-left:10%;
+    margin-left:2%
+}
+
+#imagecarrellovuoto{
+    grid-area: imagecarrellovuoto;
+    width: 100%;
+    box-shadow: 0 8px 6px -6px black;
+    margin-left:25%
+}
+
+#carrellovuoto h2{
+    margin-bottom: 1%;
+    font-size:1.7vw;
+}
+
+#carrellovuoto h5{
+    margin-top: 0%;
+    font-size:0.9vw;
+}
+
+#carrellovuoto h5 a{
+    text-decoration: none;
+    color: #0066c0;
+    font-weight: normal;
+}
+
+#carrellovuoto h5 a:hover{
+    text-decoration: underline;
+    color:#E50914;
+}
+/*fine carrello vuoto*/
+
+/*inizio carrello pieno*/
+
+h2#tuoiprodotti{
+    border-bottom: 5px solid #333;
+    margin-bottom: 5%;
+    font-size:1.7vw;
+}
+
+#tabellaCarrello{
+    table-layout: fixed;
+    border-collapse: collapse;
+
+}
+
+#tabellaCarrello img{
+    width: 100%;
+}
+
+#tabellaCarrello tr{
+    padding:1%;
+    margin:1%;
+}
+
+.rigatab{
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    padding-top:1%;
+    padding-bottom:1%;
+}
+
+#prezzotable{
+    color: #4d4d4d;
+    font-weight: normal;
+    font-size:1.2vw;
+}
+
+
+#quantitacarrello{
+    padding-top:3%;
+    padding-bottom:10%;
+    font-size:1.2vw;
+}
+
+#formCarrello input[type=submit]{
+    font-weight: normal;
+    color: #0066c0;
+    background-color: white;
+    border-bottom: 0;
+    border-top:0;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    margin-top:5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 1.0vw;
+    cursor: pointer;
+}
+
+#formCarrello input[type=submit]:hover {
+    text-decoration: underline;
+    color:#E50914;
+}
+
+span#autore{
+    font-size:1.1vw;
+    font-style: italic;
+}
+
+/*h3#titolo{
+    margin-top:0;
+    margin-bottom:0;
+
+}*/
+
+#prezzoCarrello{
+    color:darkred;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+span#prezzototale{
+    display: inline;
+    color:darkred;
+    font-size:1.2vw;
+}
+
+#totalecarrello{
+    color: #4d4d4d;
+    font-size:1.2vw;
+}
+
+#tabellaCarrello td:first-child{
+    width:3%;
+    padding-right:1%;
+}
+
+#tabellaCarrello a{
+    text-decoration: none;
+    color: #0066c0;
+    font-weight: bold;
+    font-size:1.2vw;
+}
+
+
+#tabellaCarrello a:hover{
+    text-decoration: underline;
+    color:#E50914;
+}
+
+#acquista input[type=submit]{
+    background-image: linear-gradient(red,darkred);
+    color: white;
+    padding: 1% 1%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:1.0vw;
+}
+
+#acquista input[type=submit]:hover{
+    background-image: none;
+    background-color: #E50914;
+}
+
+
+
+#acquistoSuccesso{
+    font-size:2.6vw;
+}
+
+
+/* h4 che informa il cliente che la disponibilità dei prodotti nel carrello è variata nel tempo*/
+h4#alertCart{
+    color:#E50914;
+    font-weight: normal;
+    border-left: 3px solid #333;
+    text-align: justify;
+    padding:2%;
+    font-size:1.2vw;
+}
+
+
+.successo img{
+    margin-top:3%;
+    box-shadow: 10px 10px 5px #dedede;
+    width:60%;
+}
+
+@media only screen and (max-width: 850px){ /*per il carrello vuoto*/
+
+    #acquistoSuccesso{
+        font-size:3.7vw;
+    }
+
+    .successo img{
+        margin-top:3%;
+        box-shadow: 10px 10px 5px #dedede;
+        width:80%;
+    }
+
+
+    #contenitorecarrellovuoto{
+        display: grid;
+        grid-template-rows: auto auto ;
+        grid-template-columns: 100%;
+        grid-template-areas:
+                "carrellovuoto"
+                "imagecarrellovuoto";
+        padding-top:5%;
+        padding-bottom:5%;
+        box-shadow:  0 8px 6px -6px #666666, 0 -8px 6px -6px #666666, 8px 0 6px -6px #666666, -8px 0 6px -6px #666666;
+
+    }
+
+    #carrellovuoto{
+        grid-area: carrellovuoto;
+        margin-left:25%;
+        padding:0;
+    }
+
+    #imagecarrellovuoto{
+        grid-area: imagecarrellovuoto;
+        width: 50%;
+        box-shadow: 0 8px 6px -6px black;
+        margin-left:25%;
+
+    }
+
+    #carrellovuoto h2{
+        margin-bottom: 1%;
+        font-size:2.5vw;
+    }
+
+    #carrellovuoto h5{
+        margin-top: 0%;
+        font-size:1.7vw;
+    }
+
+}
+
+@media only screen and (max-width: 550px){ /*per il carrello vuoto*/
+
+    #acquistoSuccesso{
+        font-size:3.9vw;
+    }
+
+    .successo img{
+        margin-top:3%;
+        box-shadow: 10px 10px 5px #dedede;
+        width:90%;
+    }
+
+
+    #carrellovuoto h2{
+        margin-bottom: 1%;
+        font-size:3.3vw;
+    }
+
+    #carrellovuoto h5{
+        margin-top: 0%;
+        font-size:2.2vw;
+    }
+
+}
+
+@media only screen and (max-width: 950px){ /* per il carrello pieno*/
+
+    h4#alertCart{
+        color:#E50914;
+        font-weight: normal;
+        border-left: 3px solid #333;
+        text-align: justify;
+        padding:2%;
+        font-size: 1.7vw;
+    }
+
+    #acquista input[type=submit]{
+        background-image: linear-gradient(red,darkred);
+        color: white;
+        padding: 1.5% 1.5%;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1.6vw;
+    }
+
+    #prezzotable{
+        color: #4d4d4d;
+        font-weight: normal;
+        font-size: 1.7vw;
+    }
+
+    #prezzoCarrello{
+        color:darkred;
+        font-weight: bold;
+        font-size: 1.7vw;
+    }
+
+    span#prezzototale{
+        display: inline;
+        color:darkred;
+        font-size: 1.7vw;
+    }
+
+    #totalecarrello{
+        color: #4d4d4d;
+        font-size:1.7vw;
+    }
+
+    span#autore{
+        font-size: 1.6vw;
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+    }
+
+    h2#tuoiprodotti{
+        border-bottom: 5px solid #333;
+        margin-bottom: 5%;
+        font-size: 2.7vw;
+    }
+
+
+    #tabellaCarrello td:first-child{
+        width:5%;
+        padding-right:1%;
+    }
+
+    #quantitacarrello{
+
+        font-size: 1.7vw;
+    }
+
+    #tabellaCarrello a{
+
+        font-size: 1.7vw;
+    }
+
+    #formCarrello input[type=submit]{
+        font-size: 1.5vw;
+    }
+}
+
+
+@media only screen and (max-width: 650px){
+
+    h4#alertCart{
+        color:#E50914;
+        font-weight: normal;
+        border-left: 3px solid #333;
+        text-align: justify;
+        padding:2%;
+        font-size: 2.4vw;
+    }
+
+    #acquista input[type=submit]{
+        background-image: linear-gradient(red,darkred);
+        color: white;
+        padding: 2.0% 2.0%;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size:2.3vw;
+    }
+
+    #prezzotable{
+        color: #4d4d4d;
+        font-weight: normal;
+        font-size: 2.4vw;
+    }
+
+    #prezzoCarrello{
+        color:darkred;
+        font-weight: bold;
+        font-size: 2.4vw;
+    }
+
+    span#prezzototale{
+        display: inline;
+        color:darkred;
+        font-size:2.4vw;
+    }
+
+    #totalecarrello{
+        color: #4d4d4d;
+        font-size:2.4vw;
+    }
+
+    span#autore{
+        font-size:2.0vw;
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+    }
+
+    h2#tuoiprodotti{
+        border-bottom: 5px solid #333;
+        margin-bottom: 5%;
+        font-size:3.4vw;
+    }
+
+
+    #tabellaCarrello td:first-child{
+        width:8%;
+        padding-right:1%;
+    }
+
+    #quantitacarrello{
+
+        font-size:2.4vw;
+    }
+
+    #tabellaCarrello a{
+
+        font-size:2.4vw;
+    }
+
+    #formCarrello input[type=submit]{
+        font-size: 2.2vw;
+    }
+}
+
+@media only screen and (max-width: 550px){
+
+    #acquistoSuccesso{
+
+    }
+
+
+    h4#alertCart{
+        color:#E50914;
+        font-weight: normal;
+        border-left: 3px solid #333;
+        text-align: justify;
+        padding:2%;
+        font-size: 2.9vw;
+    }
+
+    #acquista input[type=submit]{
+        background-image: linear-gradient(red,darkred);
+        color: white;
+        padding: 2.0% 2.0%;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size:2.8vw;
+    }
+
+    #prezzotable{
+        color: #4d4d4d;
+        font-weight: normal;
+        font-size: 2.9vw;
+    }
+
+    #prezzoCarrello{
+        color:darkred;
+        font-weight: bold;
+        font-size: 2.9vw;
+    }
+
+    span#prezzototale{
+        display: inline;
+        color:darkred;
+        font-size:2.9vw;
+    }
+
+    #totalecarrello{
+        color: #4d4d4d;
+        font-size:2.9vw;
+    }
+
+    span#autore{
+        font-size:2.9vw;
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+    }
+
+    h2#tuoiprodotti{
+        border-bottom: 5px solid #333;
+        margin-bottom: 5%;
+        font-size:3.9vw;
+    }
+
+
+    #tabellaCarrello td:first-child{
+        width:10%;
+        padding-right:1%;
+    }
+
+    #quantitacarrello{
+
+        font-size:2.9vw;
+    }
+
+    #tabellaCarrello a{
+
+        font-size:2.9vw;
+    }
+
+    #formCarrello input[type=submit]{
+        font-size: 2.7vw;
+    }
+}

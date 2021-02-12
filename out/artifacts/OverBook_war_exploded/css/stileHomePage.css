@@ -1,0 +1,321 @@
+#homePageContainer {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-auto-columns: 100%;
+    grid-template-areas: "homeBanner" "libriContainer" "videogamesContainer";
+}
+
+#homeBanner {
+    grid-area: homeBanner;
+    position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 5px #dedede;
+    width: 95%;
+}
+
+#libriContainer {
+    grid-area: libriContainer;
+    display: grid;
+    grid-auto-rows: auto auto auto;
+    grid-template-areas: "titoloLibri" "prodottiContainer" "plus";
+}
+
+#titoloLibri {
+    font-weight: bold;
+    font-size: 2vw;
+    text-indent: 5%;
+    border-bottom: 2px solid black;
+    color: #E50914;
+}
+
+.prodottiContainer {
+    grid-area: prodottiContainer;
+    display: grid;
+    grid-auto-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+    grid-auto-rows: auto;
+    grid-template-areas: "prodotto prodotto prodotto prodotto prodotto prodotto";
+    border: 1px solid gray;
+    padding-top: 2%;
+    align-items: center;
+}
+
+.prodotto {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-auto-columns: 50% 50%;
+    grid-template-areas: "immagineProdotto immagineProdotto"
+                        "titoloProdotto titoloProdotto"
+                        "autoreProdotto autoreProdotto"
+                        "prezzoProdotto aggProdotto";
+    /*border: 5px solid fuchsia;*/
+    height: 100%;
+}
+
+.immagineProdotto {
+    grid-area: immagineProdotto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 70%;
+    position: relative;
+}
+
+.immagineProdotto:hover {
+    box-shadow: 0 4px 8px 0 darkgrey, 0 6px 20px 0 darkgrey;
+    cursor: pointer;
+}
+
+.titoloProdotto {
+    grid-area: titoloProdotto;
+    text-decoration: none;
+    font-size: 1.2vw;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*border: 2px solid green;*/
+    margin-top: 5%;
+    margin-bottom: auto;
+}
+
+.titoloProdotto:hover {
+    color: #E50914;
+}
+
+.autoreProdotto {
+    grid-area: autoreProdotto;
+    text-align: center;
+    font-style: italic;
+    font-size: 1vw;
+    /*border: 2px solid red;*/
+    margin: auto;
+    padding: 0%;
+}
+
+.prezzoProdotto {
+    grid-area: prezzoProdotto;
+    font-size: 1.2vw;
+    text-align: right;
+    font-weight: bold;
+    color: darkred;
+    /*border: 2px solid blue;*/
+}
+
+.aggProdotto {
+    grid-area: aggProdotto;
+    position: relative;
+    /*border: 2px solid brown;*/
+}
+
+.available {
+    width: 30%;
+    position: absolute;
+    padding-top: 15%;
+    padding-left: 7%;
+}
+
+.available:hover {
+    filter: contrast(150%);
+}
+
+.notAvailable {
+    opacity: 0.5;
+    width: 30%;
+    padding-top: 15%;
+    padding-left: 7%;
+}
+
+
+#videogamesContainer {
+    grid-area: videogamesContainer;
+    display: grid;
+    grid-auto-rows: auto auto auto;
+    grid-template-areas: "titoloVideogames" "prodottiContainer" "plus";
+}
+
+#titoloVideogames {
+    font-weight: bold;
+    font-size: 2vw;
+    text-indent: 5%;
+    border-bottom: 2px solid black;
+    color: #E50914;
+}
+
+@media only screen and (max-width: 850px) {
+    .prodottiContainer {
+        grid-area: prodottiContainer;
+        display: grid;
+        grid-auto-columns: 33.3% 33.3% 33.3%;
+        grid-auto-rows: auto;
+        grid-template-areas: "prodotto prodotto prodotto" "prodotto prodotto prodotto";
+        border: 1px solid gray;
+        padding-top: 2%;
+        align-items: center;
+    }
+
+    #titoloLibri {
+        font-weight: bold;
+        font-size: 3vw;
+        text-indent: 5%;
+        border-bottom: 2px solid black;
+        color: #E50914;
+    }
+
+    #titoloVideogames {
+        font-weight: bold;
+        font-size: 3vw;
+        text-indent: 5%;
+        border-bottom: 2px solid black;
+        color: #E50914;
+    }
+
+    .prodottiContainer {
+        grid-area: prodottiContainer;
+        display: grid;
+        grid-auto-columns: 33% 33% 33% ;
+        grid-auto-rows: auto auto;
+        grid-template-areas: "prodotto prodotto prodotto" "prodotto prodotto scopri";
+        border: 1px solid gray;
+        padding-top: 2%;
+        align-items: center;
+    }
+
+    .titoloProdotto {
+        grid-area: titoloProdotto;
+        text-decoration: none;
+        font-size: 1.8vw;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /*border: 2px solid green;*/
+        margin-top: 5%;
+        margin-bottom: auto;
+    }
+
+    .autoreProdotto {
+        grid-area: autoreProdotto;
+        text-align: center;
+        font-style: italic;
+        font-size: 1.5vw;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /*border: 2px solid red;*/
+        margin: auto;
+        padding: 0%;
+    }
+
+    .prezzoProdotto {
+        grid-area: prezzoProdotto;
+        font-size: 1.8vw;
+        text-align: right;
+        font-weight: bold;
+        color: darkred;
+        /*border: 2px solid blue;*/
+    }
+
+    .available {
+        width: 25%;
+        position: absolute;
+        padding-top: 6%;
+        padding-left: 5%;
+    }
+
+    .notAvailable {
+        opacity: 0.5;
+        width: 25%;
+        position: absolute;
+        padding-top: 4%;
+        padding-left: 5%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .prodottiContainer {
+        grid-area: prodottiContainer;
+        display: grid;
+        grid-auto-columns: 33.3% 33.3% 33.3%;
+        grid-auto-rows: auto;
+        grid-template-areas: "prodotto prodotto prodotto" "prodotto prodotto prodotto";
+        border: 1px solid gray;
+        padding-top: 2%;
+        align-items: center;
+    }
+
+    #titoloLibri {
+        font-weight: bold;
+        font-size: 4vw;
+        text-indent: 5%;
+        border-bottom: 2px solid black;
+        color: #E50914;
+    }
+
+    #titoloVideogames {
+        font-weight: bold;
+        font-size: 4vw;
+        text-indent: 5%;
+        border-bottom: 2px solid black;
+        color: #E50914;
+    }
+
+    .titoloProdotto {
+        grid-area: titoloProdotto;
+        text-decoration: none;
+        font-size: 2.5vw;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /*border: 2px solid green;*/
+        margin-top: 5%;
+        margin-bottom: auto;
+    }
+
+    .autoreProdotto {
+        grid-area: autoreProdotto;
+        text-align: center;
+        font-style: italic;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 2.2vw;
+        /*border: 2px solid red;*/
+        margin: auto;
+        padding: 0%;
+    }
+
+    .prezzoProdotto {
+        grid-area: prezzoProdotto;
+        font-size: 2.5vw;
+        text-align: right;
+        font-weight: bold;
+        color: darkred;
+        /*border: 2px solid blue;*/
+    }
+
+    .available {
+        width: 30%;
+        position: absolute;
+        padding-top: 8%;
+        padding-left: 5%;
+    }
+
+    .notAvailable {
+        opacity: 0.5;
+        width: 30%;
+        position: absolute;
+        padding-top: 8%;
+        padding-left: 5%;
+    }
+}

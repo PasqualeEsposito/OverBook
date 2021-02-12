@@ -1,0 +1,521 @@
+/*tabella prodotti nel corpo (parte centrale della pagina)*/
+table td {
+    width: 10%;
+}
+
+/* inizio admin*/
+
+#adminProdotti{
+    /* margin-top: 50px;*/
+}
+
+#adminProdotti table{
+    border-collapse: collapse;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#adminProdotti table tr{
+    border-bottom: 2px solid #ddd;
+}
+
+#adminProdotti table tr:hover{
+    background-color: #f5f5f5;
+}
+
+.modifica, .sconta, .modificaResponsive{
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: left;
+    text-transform: uppercase;
+    background-image: linear-gradient(#9b9b9b,#6c6868);
+    border-radius: 4px;
+}
+
+#adminProdotti table tr td form input[type=number]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.modifica-prodotto{
+    width: 100%;
+    background-image: linear-gradient(red,darkred);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#utentiAdmin > form{
+    padding: 2.5%;
+    margin-left:22%;
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 50%;
+    background-color: white;
+    color: #919191;
+    top: 15%;
+    box-shadow: 0 8px 6px -6px #dedede, 0 -8px 6px -6px #dedede, 8px 0 6px -6px #dedede, -8px 0 6px -6px #dedede;
+}
+
+#utentiAdmin label{
+    font-size:1.1vw;
+}
+
+#utentiAdmin input, #utentiAdmin select{
+    width: 100%;
+    padding: 1.5% 2.5%;
+    margin: 1.5% 0;
+    display: inline-block;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+#utentiAdmin input[type=submit]{
+    width: 100%;
+    background-image: linear-gradient(red,darkred);
+    color: white;
+    padding: 2.5% 2.5%;
+    margin: 1.7% 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:  1.1vw;
+}
+#utentiAdmin input[type=submit]:hover{
+    width: 100%;
+    background-image: none;
+    background-color: #E50914;
+    color: white;
+    padding: 2.5% 2.5%;
+    margin: 1.7% 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:1.1vw;
+}
+
+.btn-group{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.btn-group button {
+    background-color: #1a1a1a; /* Green background */
+    border: none;
+    color: white; /* White text */
+    padding: 25px 3px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    /*float: left; /*Float the buttons side by side */
+    text-transform: uppercase;
+    font-size: 0.9em;
+    background-image: linear-gradient(#9b9b9b,#6c6868);
+    border-radius: 4px;
+    width: 32%;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #9b9b9b;
+    background-image: none;
+}
+
+
+/*Form aggiungi prodotto*/
+
+/* Modal */
+
+#myBtn{
+    display: block;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(#9b9b9b,#6c6868);
+    background-color: #6d6962;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 100%;
+    cursor:pointer;
+}
+
+.modal-body >  form{
+    border-radius: 5px;
+    padding: 20px;
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    top: 15%;
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    color: #919191;
+    box-shadow: 10px 10px 20px #dedede, -10px -10px 20px #dedede, 10px -10px 20px #dedede, -10px 10px 20px #dedede;
+}
+
+.modal-body input, .modal-body select{
+    width: 100%;
+    padding: 9px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+.modal-body input[type=submit]{
+    width: 100%;
+    background-image: linear-gradient(red,darkred);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.modal-body input[type=submit]:hover{
+    width: 100%;
+    background-image: none;
+    background-color: #E50914;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Contenuto del modal */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Animazione di apertura */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* Chiusura modal */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-image: linear-gradient(#9b9b9b,#6c6868);
+    color: white;
+}
+
+.modal-body {padding: 20px 16px;}
+
+/*fine form aggiungi prodotto*/
+
+#galleria{
+    display: grid;
+    grid-auto-rows: 350px ;
+    grid-template-columns: 33.3% 33.4% 33.3%;
+    grid-template-areas:
+            "item";
+    margin-top: 10px;
+}
+
+.item{
+    width: 100%;
+}
+
+.item img{
+    width: 108px;  /*40%*/
+    margin-left: 32%;
+    height: 150px;  /*42%*/
+}
+
+.item img:hover {
+    box-shadow: 0 4px 8px 0 darkgrey, 0 6px 20px 0 darkgrey;
+    cursor: pointer;
+}
+
+.item p{
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+@media screen and (max-width: 1147px){
+    .modifica, .modificaResponsive{
+        margin-left: 35%;
+    }
+
+    .sconta{
+        margin-left: 22%;
+    }
+
+    input[type="number"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #galleria .item>form:last-child{
+        margin-top: 20%;
+    }
+
+}
+
+@media screen and (max-width: 921px){
+    #galleria{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+/*stile informazioni prodotto*/
+.infoProdottoResponsive .modal-body div p span{
+    color: grey;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.infoProdottoResponsive .modal-body div p{
+    border-bottom: 1px solid gray;
+}
+
+.infoProdottoResponsive .modal-body img{
+    width: 40%;
+    margin-left: 32%;
+    height: 100%;
+}
+
+/*inizio tabella clienti*/
+
+#tabellaClienti{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tabellaClienti input[type=submit]{
+    background-color: #1a1a1a;
+    border: none;
+    color: white;
+    padding: 5% 6%;
+    cursor: pointer;
+    font-size: 1.0vw;
+    background-image: linear-gradient(#9b9b9b,#6c6868);
+    border-radius: 4px;
+}
+
+
+#tabellaClienti th, #tabellaClienti td {
+    text-align: center;
+    padding: 1%;
+    font-size:1.1vw;
+}
+
+#tabellaClienti tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+#libri input[type=submit], #videogames input[type=submit]{
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+#libri input[type=submit]:hover, #videogames input[type=submit]:hover{
+    background-color: grey;
+}
+
+#tabellaClienti3{
+    display:none;
+    border-collapse: collapse;
+}
+#tabellaClienti3 tr:nth-child(2n+1) {background-color: #f2f2f2;}
+#tabellaClienti3 tr:first-child {background-color: white;}
+.imgOrdini{
+    display:none;
+}
+
+
+@media only screen and (max-width: 1050px){
+    #utentiAdmin > form{
+        padding: 3.0%;
+    }
+
+    #utentiAdmin label{
+        font-size:1.5vw;
+    }
+
+    #utentiAdmin input[type=submit]{
+
+        font-size:  1.5vw;
+    }
+
+    #utentiAdmin input[type=submit]:hover{
+        font-size:1.5vw;
+    }
+
+    #tabellaClienti input[type=submit]{
+        font-size: 1.4vw;
+    }
+
+
+    #tabellaClienti th, #tabellaClienti td {
+        font-size:1.4vw;
+    }
+}
+
+
+@media only screen and (max-width: 850px){
+
+    #utentiAdmin > form{
+        padding: 4.5%;
+    }
+
+    #utentiAdmin label{
+        font-size:1.8vw;
+    }
+
+    #utentiAdmin input[type=submit]{
+
+        font-size:  1.8vw;
+    }
+
+    #utentiAdmin input[type=submit]:hover{
+        font-size:1.8vw;
+    }
+
+    .imgOrdini{
+        display: inline;
+        width:45%;
+    }
+
+    .bottoneOrdini{
+        display:none;
+    }
+
+    #tabellaClienti input[type=submit]{
+        font-size: 1.8vw;
+    }
+
+
+    #tabellaClienti th, #tabellaClienti td {
+        font-size:1.9vw;
+    }
+}
+
+@media only screen and (max-width: 650px){
+
+
+    #tabellaClienti3{
+        display:table;
+        font-size:2.5vw;
+    }
+    #tabellaClienti3 span{
+        font-size:2.5vw;
+    }
+
+    #tabellaClienti{
+        display:none;
+    }
+
+}
+
+@media only screen and (max-width: 550px){
+
+    #utentiAdmin > form{
+        padding: 4.5%;
+        width:66%;
+        margin-left:14%;
+    }
+
+
+
+    #utentiAdmin label{
+        font-size:2.6vw;
+    }
+
+    #utentiAdmin input[type=submit]{
+
+        font-size:  2.6vw;
+    }
+
+    #utentiAdmin input[type=submit]:hover{
+        font-size:2.6vw;
+    }
+
+    .btn-group{
+        font-size:2.8vw;
+    }
+
+    #tabellaClienti3{
+        font-size:2.8vw;
+    }
+
+    #tabellaClienti3 span{
+        font-size:2.8vw;
+    }
+
+
+}
+/*fine tabella clienti*/

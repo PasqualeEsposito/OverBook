@@ -1,0 +1,227 @@
+
+.regBenvenuto{
+    font-size:2.1vw;
+}
+
+#warning {
+    padding: 5%;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 5%;
+    font-size: 1.2vw;
+}
+
+.login-registrazione{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+            "login registrazione";
+}
+
+#registrazione{
+    grid-area: registrazione;
+    width: 100%;
+    margin: 0;
+
+}
+
+#login{
+    grid-area: login;
+    width: 100%;
+    height: 100%;
+}
+
+#login > form{
+    margin-left: 3%;
+    padding: 3%;
+    background-color: white;
+    color: #919191;
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    top: 15%;
+    width: 80%;
+    box-shadow: 0 8px 6px -6px #dedede, 0 -8px 6px -6px #dedede, 8px 0 6px -6px #dedede, -8px 0 6px -6px #dedede;
+}
+
+#registrazione > form{
+    padding: 3%;
+    margin-left: 3%;
+    background-color: white;
+    color: #919191;
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    top: 15%;
+    width: 80%;
+    box-shadow: 0 8px 6px -6px #dedede, 0 -8px 6px -6px #dedede, 8px 0 6px -6px #dedede, -8px 0 6px -6px #dedede;
+}
+
+#login h1, #registrazione h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size:2.5vw;
+}
+
+#login h1::before{
+    content: url("../img/sign-in-alt.svg");
+    width: 8%;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+#registrazione h1::before{
+    content: url("../img/user-plus.svg");
+    width: 6.7%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#login label, #registrazione label{
+    font-size:1.1vw;
+}
+
+#login input, #login select, #registrazione input, #registrazione select{
+    width: 100%;
+    padding: 1.5% 2.5%;
+    margin: 1.5% 0;
+    display: inline-block;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+
+
+
+#login #checkboxL {
+    width:5%;
+    margin:0;
+    padding:0;
+    display: inline;
+}
+
+#login input[type=submit], #registrazione input[type=submit]{
+    width: 100%;
+    background-image: linear-gradient(red,darkred);
+    color: white;
+    padding: 2.5% 2.5%;
+    margin: 1.7% 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:1.1vw;
+}
+
+#login input[type=submit]:hover, #registrazione input[type=submit]:hover{
+    width: 100%;
+    background-image: none;
+    background-color: #E50914;
+    color: white;
+    padding: 2.5% 2.5%;
+    margin: 1.7% 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 1100px){
+
+    .regBenvenuto{
+        font-size:2.5vw;
+    }
+
+    #login > form{
+        padding: 3.0%;
+    }
+    #registrazione > form{
+        padding: 3.0%;
+    }
+
+    #login label{
+        font-size:1.5vw;
+    }
+
+    #registrazione label{
+        font-size:1.5vw;
+    }
+
+
+    #login input[type=submit], #registrazione input[type=submit]{
+        font-size:  1.5vw;
+    }
+
+}
+
+@media only screen and (max-width: 850px){
+
+    .regBenvenuto{
+        font-size:3.0vw;
+    }
+
+    #warning {
+        font-size: 2.6vw;
+    }
+
+    #login h1, #registrazione h1{
+        font-size:3.5vw;
+    }
+
+    #login h1::before{
+        width: 5%;
+
+    }
+
+    #registrazione h1::before{
+        width: 5%;
+    }
+
+
+    .login-registrazione{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 100%;
+        grid-template-areas:
+                "login"
+                "registrazione";
+    }
+
+    #registrazione{
+        grid-area: registrazione;
+        width: 100%;
+        margin: 0;
+
+    }
+
+    #login{
+        grid-area: login;
+        width: 100%;
+        height: 100%;
+    }
+
+    #login > form{
+        margin-left: 7%;
+    }
+    #registrazione > form{
+        margin-left: 7%;
+    }
+
+    #login label{
+        font-size:2.5vw;
+    }
+
+    #registrazione label{
+        font-size:2.5vw;
+    }
+
+
+    #login input[type=submit], #registrazione input[type=submit]{
+        font-size:  2.5vw;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .regBenvenuto {
+        font-size:3.8vw;
+    }
+}

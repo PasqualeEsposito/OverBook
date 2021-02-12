@@ -1,0 +1,82 @@
+
+
+#utenteOrdini{
+    font-size:2.5vw;
+    border-bottom: 3px solid black;
+    color:#4d4d4d;
+
+}
+
+#ordiniAdmin{
+    font-size:1.3vw;
+    color:#4d4d4d;
+}
+
+#tabellaOrdiniAdmin{
+    font-style: italic;
+}
+
+#ordiniAdmin img{
+    width:50%;
+}
+
+#ordiniAdmin > #ordini{
+    box-shadow: 0 10px 8px -8px #dedede, 0 -10px 8px -8px #dedede, 10px 0 8px -8px #dedede, -10px 0 8px -8px #dedede;
+    margin-bottom:1%;
+    padding-top:2%;
+}
+
+#ordiniAdmin>.return{
+
+}
+
+@media only screen and (max-width: 950px){
+
+    #utenteOrdini{
+        font-size:2.8vw;
+    }
+
+    #ordiniAdmin{
+        font-size:1.6vw;
+    }
+
+    #ordiniAdmin img{
+        width:70%;
+    }
+}
+
+@media only screen and (max-width: 850px){
+
+    #utenteOrdini{
+        font-size:3.1vw;
+    }
+
+    #ordiniAdmin{
+        font-size:1.9vw;
+    }
+
+}
+
+@media only screen and (max-width: 650px){
+
+    #utenteOrdini{
+        font-size:3.7vw;
+    }
+
+    #ordiniAdmin{
+        font-size:2.5vw;
+    }
+
+}
+
+@media only screen and (max-width: 550px){
+
+    #utenteOrdini{
+        font-size:4.2vw;
+    }
+
+    #ordiniAdmin{
+        font-size:2.9vw;
+    }
+
+}

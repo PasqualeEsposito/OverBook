@@ -1,0 +1,290 @@
+html {
+    background-image: url("./../imagePage/sfondo3.jpg");
+
+}
+
+body{
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+}
+
+/*Inizio layout pagina*/
+.container{
+    display: grid;
+    grid-template-rows: 150px auto auto ;
+    grid-template-columns: 100%;
+    grid-template-areas:
+            "header"
+            "content"
+            "footer";
+
+}
+
+#headerBarra{
+    grid-area: header;
+}
+
+.corpo{
+    grid-area: content;
+    min-height: 600px;
+    padding: 0% 2% 10% 2%;
+}
+
+footer{
+    grid-area: footer;
+}
+/*fine layout pagina*/
+
+h1#notifica{
+    margin: 1%;
+    padding: 5%;
+    text-align: center;
+}
+
+
+
+/*h5 della disponibilità del prodotto ..se il prodotto non è disponibile scompare il botton e compare la scritta in rosso "prodotto non disponibile"*/
+h5.disponibilita{
+    color: #E50914;
+}
+
+
+/* inizio header*/
+#menuResponsive{
+    display: none;
+}
+
+#cercaResponsive{
+    display: none;
+}
+
+header{
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background-color: #1a1a1a;
+    top: 0;
+    width: 100%;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(#9b9b9b,#6c6868);
+   /* background-color: #6d6962;*/
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header ul div{
+    display: inline-block;
+}
+
+header ul li a:hover:not(.active) {
+    /*background-color: #E50914;*/
+    background-image: none;
+    background-color: #9b9b9b;
+}
+
+.active {
+    background-image: linear-gradient(red,darkred);
+}
+
+.active:hover{
+    background-image: none;
+    background-color: #E50914;
+}
+
+header ul h1{
+    display: inline;
+    font-family: 'Fredoka One', cursive;
+    margin-left: 10px;
+    top: 5px;
+    position: relative;
+}
+
+header ul h1 a{
+    text-decoration: none;
+    color: #E50914;
+}
+
+
+
+#ricerca{
+    display: inline;
+}
+
+#ricerca input, #ricerca select{
+    max-width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+#ricerca input[type=submit] {
+    max-width: 100%;
+    background-image: linear-gradient(red,darkred);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+#ricerca input[type=submit]:hover {
+    max-width: 100%;
+    background-image: none;
+    background-color: #E50914;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#liForm{
+    margin-right: 10%;
+    margin-left: 2%;
+}
+/*fine header*/
+
+
+/* inizio dropdown*/
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 0;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*fine dropdown*/
+
+
+/* inizio nav bar*/
+#barra ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#barra li {
+    float: left;
+}
+
+#barra li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#barra li a:hover:not(.active) {
+    background-color: #1a1a1a;
+}
+
+/* fine nav bar*/
+
+
+/*link torna alla homepage*/
+.return{
+    text-decoration: none;
+    color: #0066c0;
+    font-weight: normal;
+}
+
+/*link torna alla homepage*/
+.return:hover{
+    text-decoration: underline;
+    color:#E50914;
+}
+
+.scopri a{
+    text-decoration: none;
+    color: #0066c0;
+    font-weight: normal;
+    font-size: small;
+    font-famliy: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.scopri a:hover{
+    text-decoration: underline;
+    color:#E50914;
+}
+
+/*notifica di errore*/
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+
+
+
+
+

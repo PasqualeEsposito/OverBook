@@ -1,0 +1,211 @@
+
+#containerContact{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 30% 70% ;
+    grid-template-areas: "immaginecall titolocall";
+}
+
+
+#call{
+    grid-area:immaginecall;
+    width: 33%;
+    margin-left: auto;
+    box-shadow: 0 8px 6px -6px black;
+    border-radius:50%;
+
+}
+
+
+#titolocall{
+    grid-area: titolocall;
+    padding-left:2%;
+}
+
+#titolocall h1{
+    color: #1a1a1a;
+    font-size:2.1vw;
+}
+#titolocall h2{
+    color: #6d6962;
+    font-size:1.5vw;
+}
+
+#grazieContattaci{
+    display:none;
+    font-size:2.0vw;
+    text-align:justify;
+    margin-top:7%;
+    margin-left:2%;
+}
+
+#contattaci > form{
+    padding: 2.5%;
+    margin-left:22%;
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    position: relative;
+    width: 50%;
+    background-color: white;
+    color: #919191;
+    top: 15%;
+    box-shadow: 0 8px 6px -6px #dedede, 0 -8px 6px -6px #dedede, 8px 0 6px -6px #dedede, -8px 0 6px -6px #dedede;
+}
+
+#contattaci label{
+    font-size:1.1vw;
+}
+
+#contattaci input, #contattaci textarea{
+    width: 100%;
+    padding: 1.5% 2.5%;
+    margin: 1.5% 0;
+    display: inline-block;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    resize:none;
+}
+
+#contattaci input[type=submit]{
+    width: 100%;
+    background-image: linear-gradient(red,darkred);
+    color: white;
+    padding: 2.5% 2.5%;
+    margin: 1.7% 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:  1.1vw;
+}
+#contattaci input[type=submit]:hover{
+    width: 100%;
+    background-image: none;
+    background-color: #E50914;
+    color: white;
+    padding: 2.5% 2.5%;
+    margin: 1.7% 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:1.1vw;
+}
+
+@media only screen and (max-width: 1100px){
+
+
+    #contattaci > form{
+        padding: 3.0%;
+    }
+
+    #contattaci label{
+        font-size:1.5vw;
+    }
+
+    #contattaci input[type=submit]{
+
+        font-size:  1.5vw;
+    }
+
+    #contattaci input[type=submit]:hover{
+        font-size:1.5vw;
+    }
+
+}
+
+@media only screen and (max-width: 850px){
+
+    #grazieContattaci{
+        display:none;
+        font-size:2.5vw;
+        margin-left:2%;
+    }
+
+
+    #call{
+        grid-area:immaginecall;
+        width: 32%;
+
+    }
+
+    #titolocall h1{
+        color: #1a1a1a;
+        font-size:2.5vw;
+    }
+    #titolocall h2{
+        color: #6d6962;
+        font-size:1.8vw;
+    }
+
+
+    #contattaci > form{
+        padding: 4.5%;
+    }
+
+    #contattaci label{
+        font-size:1.8vw;
+    }
+
+    #contattaci input[type=submit]{
+
+        font-size:  1.8vw;
+    }
+
+    #contattaci input[type=submit]:hover{
+        font-size:1.8vw;
+    }
+
+}
+
+@media only screen and (max-width: 550px){
+
+    #grazieContattaci{
+        display:none;
+        font-size:2.3vw;
+        margin-left:2%;
+    }
+
+
+    #containerContact{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 25% 75% ;
+        grid-template-areas: "immaginecall titolocall";
+    }
+
+    #call{
+        grid-area:immaginecall;
+        width: 55%;
+
+    }
+
+    #titolocall h1{
+        color: #1a1a1a;
+        font-size:3.7vw;
+    }
+    #titolocall h2{
+        color: #6d6962;
+        font-size:2.7vw;
+    }
+
+
+    #contattaci > form{
+        padding: 4.5%;
+        width:66%;
+        margin-left:14%;
+    }
+
+
+
+    #contattaci label{
+        font-size:2.6vw;
+    }
+
+    #contattaci input[type=submit]{
+
+        font-size:  2.6vw;
+    }
+
+    #contattaci input[type=submit]:hover{
+        font-size:2.6vw;
+    }
+
+}

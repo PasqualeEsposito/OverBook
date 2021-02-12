@@ -1,0 +1,266 @@
+.caricaAltri{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-areas: "vuoto visualizzaAltri tornasu";
+    margin-top: 1%;
+}
+
+.bottoneCategoria{
+    text-align: center;
+    grid-area:visualizzaAltri;
+    color: #0066c0;
+    cursor: pointer;
+}
+
+.bottoneCategoria:hover{
+    color: #005299;
+    cursor: pointer;
+}
+
+
+h4#alertCategoria{
+    color:#E50914;
+    font-weight: normal;
+    border-left: 3px solid #333;
+    text-align: justify;
+    padding:2%;
+    font-size:1.1vw;
+}
+
+
+.top{
+    grid-area: tornasu;
+    text-align: center;
+    cursor: pointer;
+    color: #0066c0;
+}
+
+.top:hover{
+    color: #005299;
+    cursor: pointer;
+}
+
+.tabellaCategoria table {
+    border-collapse: collapse;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.tabellaCategoria table tr {
+    border-bottom: 2px solid #ddd;
+}
+
+.tabellaCategoria table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.titoloCategoria {
+    font-weight: bold;
+    font-size: 2vw;
+    text-indent: 5%;
+    border-bottom: 2px solid black;
+    color: #E50914;
+}
+
+.descrizioneCategoria {
+    font-size: 1.3vw;
+    text-indent: 5%;
+    color: grey;
+    margin-bottom: 5%;
+}
+
+.titolo {
+    font-size: 1.2vw;
+    color: black;
+}
+
+.prezzo {
+    font-weight: bold;
+    color: darkred;
+    font-size: 1.2vw;
+}
+
+.immagine {
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 70%;
+    position: center;
+}
+
+.immagine:hover {
+    box-shadow: 0 4px 8px 0 darkgrey, 0 6px 20px 0 darkgrey;
+    cursor: pointer;
+}
+
+.addCart {
+    width: 20%;
+}
+
+.addCart:hover {
+    filter: contrast(150%);
+}
+
+.cantAdd {
+    width: 20%;
+    opacity: 0.5;
+}
+
+.nomeProdotto {
+    grid-area: titoloProdotto;
+    text-decoration: none;
+    font-size: 1.2vw;
+    text-align: center;
+    color: #0066c0;
+    font-weight: bold;
+}
+
+.nomeProdotto:hover {
+    text-decoration: underline;
+    color:#E50914;
+}
+
+
+@media only screen and (max-width: 850px) {
+
+    h4#alertCategoria{
+        font-size:1.7vw;
+    }
+
+    .titoloCategoria {
+        font-weight: bold;
+        font-size: 3vw;
+        text-indent: 5%;
+        border-bottom: 2px solid black;
+        color: #E50914;
+    }
+
+    .descrizioneCategoria {
+        font-size: 2vw;
+        text-indent: 5%;
+        color: grey;
+        margin-bottom: 5%;
+    }
+
+    .nomeProdotto {
+        grid-area: titoloProdotto;
+        text-decoration: none;
+        font-size: 2vw;
+        text-align: center;
+        color: #0066c0;
+        font-weight: bold;
+    }
+
+    .immagine {
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 90%;
+        position: center;
+    }
+
+    .prezzo {
+        font-weight: bold;
+        color: darkred;
+        font-size: 1.8vw;
+    }
+
+    .addCart {
+        width: 30%;
+    }
+
+    .cantAdd {
+        width: 30%;
+        opacity: 0.5;
+    }
+
+    .bottoneCategoria{
+        text-align: center;
+        grid-area:visualizzaAltri;
+        color: #0066c0;
+        cursor: pointer;
+        font-size: 1.8vw;
+    }
+
+    .top{
+        grid-area: tornasu;
+        text-align: center;
+        cursor: pointer;
+        color: #0066c0;
+        font-size: 1.8vw;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    h4#alertCategoria{
+
+        font-size:2.2vw;
+    }
+
+
+    .titoloCategoria {
+        font-weight: bold;
+        font-size: 4vw;
+        text-indent: 5%;
+        border-bottom: 2px solid black;
+        color: #E50914;
+    }
+
+    .descrizioneCategoria {
+        font-size: 3.3vw;
+        text-indent: 5%;
+        color: grey;
+        margin-bottom: 5%;
+    }
+
+    .nomeProdotto {
+        grid-area: titoloProdotto;
+        text-decoration: none;
+        font-size: 2.8vw;
+        text-align: center;
+        color: #0066c0;
+        font-weight: bold;
+    }
+
+    .immagine {
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 100%;
+        position: center;
+    }
+
+    .prezzo {
+        font-weight: bold;
+        color: darkred;
+        font-size: 2.5vw;
+    }
+
+    .addCart {
+        width: 40%;
+    }
+
+    .cantAdd {
+        width: 40%;
+        opacity: 0.5;
+    }
+
+    .bottoneCategoria{
+        text-align: center;
+        grid-area:visualizzaAltri;
+        color: #0066c0;
+        cursor: pointer;
+        font-size: 2.4vw;
+    }
+
+    .top{
+        grid-area: tornasu;
+        text-align: center;
+        cursor: pointer;
+        color: #0066c0;
+        font-size: 2.4vw;
+    }
+}

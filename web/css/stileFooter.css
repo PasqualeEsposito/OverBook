@@ -1,0 +1,201 @@
+/* inizio footer*/
+footer{
+    background-color:  #1a1a1a;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+
+}
+
+h4#follow, h4#contact{
+    margin-top:0;
+    font-weight: normal;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    padding: 0 0 3% 0;
+}
+
+
+.grid-container > div {
+    text-align: center;
+    font-size: 1.4vw;
+    padding: 0px 55px;
+
+}
+
+.grid-container a{
+    text-decoration: none;
+    color:white;
+}
+
+#logo1Footer{
+    color:#E50914;
+    font-family: 'Fredoka One', cursive;
+    padding:0%;
+    margin:0%;
+}
+
+#logo2Footer{
+    color:#E50914;
+    font-family: 'Fredoka One', cursive;
+    top:10%;
+    padding:0%;
+    margin:0%;
+}
+
+#info{
+    padding:0%;
+    margin:0%;
+    font-family: "Times New Roman";
+    font-size:1.0vw;
+}
+
+footer h5 {
+    padding: 1%;
+    margin: 0;
+    font-weight: normal;
+}
+/* fine footer*/
+
+@media only screen and (max-width: 850px){
+
+    footer{
+        background-color:  #1a1a1a;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+
+    }
+
+    h4#follow, h4#contact{
+        margin-top:0;
+        font-weight: normal;
+    }
+
+    .grid-container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+        padding: 0 0 3% 0;
+    }
+
+
+    .grid-container > div {
+        text-align: center;
+        font-size: 2.4vw;
+        padding: 0px 55px;
+
+    }
+
+    .grid-container a{
+        text-decoration: none;
+        color:white;
+    }
+
+    #logo1Footer{
+        color:#E50914;
+        font-family: 'Fredoka One', cursive;
+        padding:0%;
+        margin:0%;
+    }
+
+    #logo2Footer{
+        color:#E50914;
+        font-family: 'Fredoka One', cursive;
+        top:10%;
+        padding:0%;
+        margin:0%;
+    }
+
+    #info{
+        padding:0%;
+        margin:0%;
+        font-family: "Times New Roman";
+        font-size:1.5vw;
+    }
+
+    footer h5 {
+        padding: 1%;
+        margin: 0;
+        font-weight: normal;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+
+    footer{
+        background-color:  #1a1a1a;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+
+    }
+
+    h4#follow, h4#contact{
+        margin-top:0;
+        font-weight: normal;
+    }
+
+    .grid-container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+        padding: 0 0 3% 0;
+    }
+
+
+    .grid-container > div {
+        text-align: center;
+        font-size: 2.2vw;
+        padding: 0px 55px;
+
+    }
+
+    .grid-container a{
+        text-decoration: none;
+        color:white;
+    }
+
+    #logo1Footer{
+        color:#E50914;
+        font-family: 'Fredoka One', cursive;
+        padding:0%;
+        margin:0%;
+        font-size:25px;
+    }
+
+    #logo2Footer{
+        color:#E50914;
+        font-family: 'Fredoka One', cursive;
+        top:10%;
+        padding:0%;
+        margin:0%;
+        font-size:12px;
+    }
+
+    #info{
+        padding:0%;
+        margin:0%;
+        font-family: "Times New Roman";
+        font-size:1.8vw;
+    }
+
+    footer h5 {
+        padding: 1%;
+        margin: 0;
+        font-weight: normal;
+        font-size:2.3vw;
+    }
+
+}

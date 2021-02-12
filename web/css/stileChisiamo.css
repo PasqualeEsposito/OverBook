@@ -1,0 +1,193 @@
+#breve{
+    border-bottom: 5px solid #333;
+    margin-bottom: 5%;
+    font-size:2.7vw;
+}
+
+#contenitorechisiamo{
+    display: grid;
+    grid-template-rows: auto auto auto ;
+    grid-template-columns: 100%  ;
+    grid-template-areas:
+            "primoblocco"
+            "secondoblocco"
+            "terzoblocco";
+
+}
+
+#primoblocco{
+    grid-area: primoblocco;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 50% ;
+    grid-template-areas:
+            "primochisiamo primaimmagine";
+    padding-bottom:5%;
+}
+
+#primochisiamo{
+    grid-area: primochisiamo;
+    font-size: 1.3vw;
+    line-height: 150%; /*spazio tra le line*/
+    padding-right: 2%;
+    text-align: justify; /*per alliniare tutte le righe del testo*/
+    padding-top:12%;
+
+}
+#primaimmagine{
+    grid-area: primaimmagine;
+    width: 90%;
+    box-shadow: 10px 10px 5px #dedede; /*per le ombre*/
+    margin-left: auto; /*per spostare l'immagine tutta a destra*/
+}
+
+#secondoblocco{
+    grid-area: secondoblocco;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 50% ;
+    grid-template-areas:
+            "secondaimmagine secondochisiamo";
+    padding-bottom:5%;
+}
+
+#secondaimmagine{
+    grid-area: secondaimmagine;
+    width: 90%;
+    box-shadow: 10px 10px 5px #dedede; /*per le ombre*/
+}
+#secondochisiamo{
+    grid-area: secondochisiamo;
+    font-size: 1.3vw;
+    line-height: 150%; /*spazio tra le line*/
+    padding-left: 2%;
+    text-align: justify; /*per alliniare tutte le righe del testo*/
+}
+
+#terzoblocco{
+    grid-area:terzoblocco;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 50% ;
+    grid-template-areas:
+            "terzochisiamo terzaimmagine";
+
+}
+
+#terzochisiamo{
+    grid-area: terzochisiamo;
+    font-size: 1.3vw;
+    line-height: 150%; /*spazio tra le line*/
+    padding-right: 2%;
+    text-align: justify; /*per alliniare tutte le righe del testo*/
+    padding-top:7%;
+}
+#terzaimmagine{
+    grid-area: terzaimmagine;
+    width:90%;
+    box-shadow: 10px 10px 5px #dedede;
+    margin-left: auto; /*per spostare l'immagine tutta a destra*/
+}
+
+
+@media only screen and (max-width: 850px){
+
+    #breve{
+        border-bottom: 5px solid #333;
+        font-size:5vw;
+    }
+
+    #contenitorechisiamo{
+        display: grid;
+        grid-template-rows: auto auto auto ;
+        grid-template-columns: 100%  ;
+        grid-template-areas:
+                "primoblocco"
+                "secondoblocco"
+                "terzoblocco";
+
+    }
+
+
+    #primoblocco{
+        grid-area: primoblocco;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 100%;
+        grid-template-areas:
+                "primochisiamo"
+                "primaimmagine";
+    }
+
+    #primochisiamo{
+        grid-area: primochisiamo;
+        font-size: 2.8vw;
+        line-height: 150%; /*spazio tra le line*/
+        text-align: justify; /*per alliniare tutte le righe del testo*/
+        padding-right: 0;
+        padding-top:0;
+    }
+
+    #primaimmagine{
+        grid-area: primaimmagine;
+        width: 100%;
+        box-shadow: 0 8px 6px -6px black; /*per le ombre*/
+        display:block;
+        margin:0 auto;
+    }
+
+
+
+    #secondoblocco{
+        grid-area: secondoblocco;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 100% ;
+        grid-template-areas:
+                "secondochisiamo"
+                "secondaimmagine";
+    }
+
+    #secondochisiamo{
+        grid-area: secondochisiamo;
+        font-size: 2.8vw;
+        line-height: 150%; /*spazio tra le line*/
+        text-align: justify; /*per alliniare tutte le righe del testo*/
+    }
+
+    #secondaimmagine{
+        grid-area: secondaimmagine;
+        width: 100%;
+        box-shadow: 0 8px 6px -6px black; /*per le ombre*/
+        display:block;
+        margin:0 auto;
+    }
+
+    #terzoblocco{
+        grid-area:terzoblocco;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 100%;
+        grid-template-areas:
+                "terzochisiamo"
+                "terzaimmagine";
+
+    }
+
+    #terzochisiamo{
+        grid-area: terzochisiamo;
+        font-size: 2.8vw;
+        line-height: 150%; /*spazio tra le line*/
+        text-align: justify; /*per alliniare tutte le righe del testo*/
+        padding-right: 0;
+        padding-top:0;
+    }
+    #terzaimmagine{
+        grid-area: terzaimmagine;
+        width:100%;
+        box-shadow: 0 8px 6px -6px black;
+        display:block;
+        margin:0 auto;
+    }
+
+}

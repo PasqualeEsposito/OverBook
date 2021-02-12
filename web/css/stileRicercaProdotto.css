@@ -1,0 +1,64 @@
+/*nessun risultato*/
+#contenitorenessunrisultato {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: "imagenessunrisultato nessunrisultato";
+    /*border-top: 5px solid #333;
+    border-bottom: 5px solid #333;*/
+    padding-top:5%;
+    padding-bottom:5%;
+    box-shadow: 10px  10px 5px #dedede,
+    -10px -10px 5px #dedede,
+    10px -10px 5px #dedede,
+    -10px  10px 5px #dedede;
+}
+
+#nessunrisultato {
+    grid-area: nessunrisultato;
+    padding-left:10%;
+    margin-left:2%
+}
+
+.nessunRisultato {
+    font-size: 2vw;
+}
+
+#imagenessunrisultato {
+    grid-area: imagenessunrisultato;
+    width: 100%;
+    box-shadow: 10px 10px 5px #dedede;
+    margin-left:25%
+}
+
+#nessunrisultato h2{
+    margin-bottom: 1%;
+}
+
+#nessunrisultato h5{
+    margin-top: 0%;
+}
+
+#nessunrisultato h5 a{
+    text-decoration: none;
+    color: #0066c0;
+    font-weight: normal;
+}
+
+#nessunrisultato h5 a:hover{
+    text-decoration: underline;
+    color:#E50914;
+}
+/*fine nessun risultato*/
+
+@media screen and (max-width: 850px) {
+    .nessunRisultato {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .nessunRisultato {
+        font-size: 3vw;
+    }
+}
